@@ -2,7 +2,7 @@
 
   <div class="row pt-3">
     <div class="col-6">
-      <h4>Lista de Clientes</h4>
+      <h4>Lista de Agendamentos</h4>
     </div>
 
     <div class="col-6 text-end">
@@ -32,7 +32,7 @@
         <div class="card-footer text-center">
           <div class="row">
             <div class="col-6 p-0">
-             <small>{{item.email}}</small> 
+             <small>{{item.email}}</small>
             </div>
             <div class="col-6">
               <button class="btn btn-sm btn-primary " (click)="onEdit(item)">Editar</button>
@@ -46,10 +46,10 @@
     }
   </div>
 
-  } @else { 
+  } @else {
     <div class="row">
       <div class="col-12 p-4 text-center">
-        <p>Clique em "Adicionar" para inserir na lista um novo cliente.</p>
+        <p>Clique em "Adicionar" para inserir na lista um novo agendamento.</p>
       </div>
     </div>
   }
@@ -61,7 +61,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Adicionar um novo cliente</h4>
+        <h4 class="modal-title">Adicionar um novo agendamento</h4>
         <button type="button" class="btn-close" (click)="closeModel()"></button>
       </div>
 
@@ -118,7 +118,7 @@
         } @else {
           <button type="button" class="btn btn-success" (click)="update()">Atualizar</button>
         }
-       
+
       </div>
     </div>
   </div>
